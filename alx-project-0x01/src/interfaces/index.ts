@@ -47,3 +47,20 @@ export interface PostModalProps {
   onClose: () => void;
   onSubmit: (post: PostData) => void;
 }
+
+// User modal/data types
+export interface UserData {
+  id?: number;
+  name: string;
+  username: string;
+  email: string;
+  phone: string;
+  website: string;
+  address: UserAddress;
+  company: UserCompany;
+}
+
+export interface UserModalProps {
+  onClose: () => void;
+  onSubmit: (user: UserData) => void;
+}
